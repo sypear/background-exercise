@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'ChosunGu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'ChosunGu', sans-serif;
+}
+
+/* Font Size */
+.fs-small {
+    font-size: 14px;
+    line-height: 1.428571428571429;
+}
+
+.fs-base {
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.fs-large {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Font Weight */
+.fw-regular {
+    font-weight: 400;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+/* Colors */
+.text-primary {
+    color: #151B26;
+}
+
+.text-secondary {
+    color: #7D858F;
+}
+
+.text-white {
+    color: #fff;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background : Exercise</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./typography.css">
+</head>
+<body>
+    <!-- 집 소개 Post 자체로 독립적인 정보 컨텐츠이므로 article tag 사용 -->
+    <article class="card">
+        <!-- Card Image -->
+        <div class="card-image">
+            <button type="button" class="like-button" aria-label="마음에 들어요"></button>
+        </div>
+
+        <!-- Card Content -->
+        <div class="card-content">
+            <!-- article의 header 부분 -->
+            <header class="card-header">
+                <div class="property-type">
+                    <!-- Post의 작성자가 Super Host라는 점은 중요 정보라 생각되어 strong tag 사용 -->
+                    <strong lang="en" class="super-badge fs-small fw-medium text-white">
+                        Super Host
+                    </strong>
+                    <span class="fs-base fw-regular text-secondary">
+                        애월읍, 제주시
+                    </span>
+                </div>
+                <div class="property-stat">
+                    <!-- 별점은 중요 정보라 생각되어 strong tag 사용 -->
+                    <strong class="fs-base fw-regular text-primary" aria-label="별점: ">
+                        4.97
+                    </strong>
+                    <span class="fs-base fw-regular text-secondary" aria-label="총 203개의 리뷰">
+                        203
+                    </span>
+                </div>
+            </header>
+
+            <!-- article(Sectiong Elements)은 heading tag 필수 -->
+            <!-- 제목 단계 건너 뛰지 않기. 언제나 순차적으로 기입. -->
+            <h1 class="card-title fs-large fw-regular text-primary">
+                따뜻한 감성이 가득한 바다뷰 독채 - 프라이빗한 정원에서 조용한 휴식 가능
+            </h1>
+
+            <div class="card-detail fs-small fw-regular text-secondary">
+                <!-- {key: value} 구조를 가지고 있으므로 Description List 사용 -->
+                <dl class="property-condition">
+                    <div>
+                        <!-- Screen Reader 사용자용 'sr-only' 클래스 선언 -->
+                        <dt class="sr-only">방 및 침대</dt>
+                        <dd>
+                            <!-- css 디자인을 위해 각 항목 마다 span 태그 사용 -->
+                            <span>침실 2개</span>
+                            <span>침대 2개</span>
+                            <span>욕실 1개</span>
+                        </dd>
+                    </div>
+                </dl>
+                <dl class="property-facilities">
+                    <div>
+                        <dt class="sr-only">편의 시설</dt>
+                        <dd>
+                            <span>해변과 인접</span>
+                            <span>주방</span>
+                            <span>TV</span>
+                            <span>엘리베이터</span>
+                            <span>세탁기</span>
+                            <span>무선 인터넷</span>
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </article>
+</body>
+</html>
